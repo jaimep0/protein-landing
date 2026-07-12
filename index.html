@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page para venta de whey protein, isolate, creatina y bundles fitness."
+    />
+    <title>NutriForge Proteinas</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="NutriForge inicio">
+        <span class="brand-mark">NF</span>
+        <span>NutriForge</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#productos">Productos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#resenas">Resenas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="icon-button" data-scroll="#contacto" aria-label="Ir a contacto">
+        <span aria-hidden="true">-></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1775199603078-e1d964929e10?auto=format&fit=crop&w=1100&q=82"
+            alt=""
+          />
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Proteina premium para entrenar mejor</p>
+          <h1 id="hero-title">Nutricion limpia, sabores potentes y rutina lista.</h1>
+          <p class="hero-text">
+            Whey, isolate, creatina y bundles pensados para fuerza, constancia y recuperacion diaria,
+            sin promesas medicas ni formulas complicadas.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" data-scroll="#productos">Comprar ahora</button>
+            <button class="secondary-button" data-scroll="#sabores">Ver sabores</button>
+          </div>
+          <div class="trust-strip" aria-label="Datos destacados">
+            <span>24g proteina*</span>
+            <span>Sin azucar anadida</span>
+            <span>Envio rapido</span>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Oferta destacada">
+          <p>Bundle del mes</p>
+          <strong>Whey + Creatina + Shaker</strong>
+          <span>Desde $899 MXN</span>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="Categorias">
+        <div>
+          <span class="mini-label">Linea completa</span>
+          <h2>Elige por objetivo, sabor o momento del dia.</h2>
+        </div>
+        <div class="category-row">
+          <span>Fuerza</span>
+          <span>Definicion</span>
+          <span>Recuperacion</span>
+          <span>Snack alto en proteina</span>
+        </div>
+      </section>
+
+      <section class="section" id="productos" aria-labelledby="productos-title">
+        <div class="section-heading">
+          <p class="eyebrow">Favoritos</p>
+          <h2 id="productos-title">Productos listos para tu stack</h2>
+        </div>
+        <div class="filters" aria-label="Filtrar productos por objetivo">
+          <button class="filter is-active" data-goal="todos" aria-pressed="true">Todos</button>
+          <button class="filter" data-goal="fuerza" aria-pressed="false">Fuerza</button>
+          <button class="filter" data-goal="definicion" aria-pressed="false">Definicion</button>
+          <button class="filter" data-goal="recuperacion" aria-pressed="false">Recuperacion</button>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-product-goal="fuerza recuperacion">
+            <img
+              src="https://images.unsplash.com/photo-1775199603089-e953f3716737?auto=format&fit=crop&w=760&q=82"
+              alt="Bote de whey protein con scoop y shaker"
+            />
+            <div class="product-info">
+              <p class="tag">Whey blend</p>
+              <h3>Whey Protein Chocolate</h3>
+              <p>Textura cremosa para licuados, avena o shake post-entreno.</p>
+              <div class="price-row"><strong>$649</strong><button aria-label="Agregar Whey Protein Chocolate">+</button></div>
+            </div>
+          </article>
+          <article class="product-card" data-product-goal="definicion recuperacion">
+            <img
+              src="https://images.unsplash.com/photo-1775199603318-7f8a9a63b40d?auto=format&fit=crop&w=760&q=82"
+              alt="Proteina whey con shaker y polvo servido"
+            />
+            <div class="product-info">
+              <p class="tag">Isolate</p>
+              <h3>Isolate Vainilla Clean</h3>
+              <p>Formula ligera para quien busca una mezcla suave y practica.</p>
+              <div class="price-row"><strong>$789</strong><button aria-label="Agregar Isolate Vainilla Clean">+</button></div>
+            </div>
+          </article>
+          <article class="product-card" data-product-goal="fuerza">
+            <img
+              src="https://images.unsplash.com/photo-1782392487647-7fee9715d1f5?auto=format&fit=crop&w=760&q=82"
+              alt="Scoop de suplemento entrando a un shaker en gimnasio"
+            />
+            <div class="product-info">
+              <p class="tag">Creatina</p>
+              <h3>Creatina Monohidratada</h3>
+              <p>Basico de entrenamiento para complementar rutinas de fuerza.</p>
+              <div class="price-row"><strong>$399</strong><button aria-label="Agregar Creatina Monohidratada">+</button></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits section" id="beneficios" aria-labelledby="beneficios-title">
+        <div class="benefit-image">
+          <img
+            src="https://images.unsplash.com/photo-1775199603078-e1d964929e10?auto=format&fit=crop&w=900&q=78"
+            alt="Proteina en polvo con scoop junto a equipo de entrenamiento"
+          />
+        </div>
+        <div class="benefit-copy">
+          <p class="eyebrow">Rutina simple</p>
+          <h2 id="beneficios-title">Suplementos que se integran facil a tu dia.</h2>
+          <ul class="benefit-list">
+            <li><span>01</span> Mezcla rapida con agua, leche o smoothies.</li>
+            <li><span>02</span> Opciones para volumen, definicion y mantenimiento.</li>
+            <li><span>03</span> Sabores clasicos y de temporada sin claims exagerados.</li>
+            <li><span>04</span> Packs con shaker para empezar sin friccion.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section flavors" id="sabores" aria-labelledby="sabores-title">
+        <div class="section-heading">
+          <p class="eyebrow">Sabores</p>
+          <h2 id="sabores-title">Que tu shake se sienta como premio.</h2>
+        </div>
+        <div class="flavor-grid">
+          <span class="flavor chocolate">Chocolate intenso</span>
+          <span class="flavor vanilla">Vainilla cremosa</span>
+          <span class="flavor berry">Fresa yogurt</span>
+          <span class="flavor coffee">Cafe frio</span>
+          <span class="flavor banana">Platano canela</span>
+        </div>
+      </section>
+
+      <section class="section reviews" id="resenas" aria-labelledby="resenas-title">
+        <div class="section-heading">
+          <p class="eyebrow">Comunidad</p>
+          <h2 id="resenas-title">Clientes que ya tienen su ritual.</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote>
+            <p>"El chocolate se mezcla sin grumos y no se siente pesado."</p>
+            <cite>Marco, cross training</cite>
+          </blockquote>
+          <blockquote>
+            <p>"Me gusto el bundle porque trae todo para arrancar la semana."</p>
+            <cite>Valeria, gimnasio 5x semana</cite>
+          </blockquote>
+          <blockquote>
+            <p>"La isolate de vainilla queda muy bien con cafe y hielo."</p>
+            <cite>Diego, running y fuerza</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section faq" aria-labelledby="faq-title">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Preguntas rapidas</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Cuando tomarla?</summary>
+            <p>Como complemento practico despues de entrenar o cuando necesitas una comida alta en proteina.</p>
+          </details>
+          <details>
+            <summary>Hay sabores sin azucar anadida?</summary>
+            <p>Si, la linea clean prioriza sabores clasicos y endulzado moderado.</p>
+          </details>
+          <details>
+            <summary>Los botones compran de verdad?</summary>
+            <p>No por ahora. Esta version esta lista como landing visual y puede conectarse a carrito despues.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact section" id="contacto" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Pedido rapido</p>
+          <h2 id="contact-title">Arma tu stack y pide disponibilidad por WhatsApp.</h2>
+          <p>Cuentanos tu objetivo, sabor favorito y ciudad para cotizar envio.</p>
+        </div>
+        <form class="contact-form">
+          <label>
+            Nombre
+            <input type="text" placeholder="Tu nombre" />
+          </label>
+          <label>
+            Objetivo
+            <select>
+              <option>Ganar fuerza</option>
+              <option>Definicion</option>
+              <option>Recuperacion</option>
+              <option>Solo probar sabores</option>
+            </select>
+          </label>
+          <label>
+            Mensaje
+            <textarea placeholder="Quiero el bundle chocolate con creatina"></textarea>
+          </label>
+          <button class="primary-button" type="button">Enviar por WhatsApp</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>NutriForge</strong>
+      <span>*Valores ilustrativos por porcion. Consulta la etiqueta real antes de comprar.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
